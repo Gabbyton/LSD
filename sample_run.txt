@@ -1,0 +1,11 @@
+In terminal:
+gcc -fPIC -shared -o my_functions.so lsd_call_example.c lsd.c
+py3
+
+In Python:
+
+from ctypes import *
+so_file = "./my_functions.so" # the ./ symbol is important
+my_functions = CDLL(so_file)
+print(type(myfunctions))
+my_functions.main() # printing main will just print the pointer preview

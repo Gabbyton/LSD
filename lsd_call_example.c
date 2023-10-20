@@ -7,8 +7,8 @@ int main(void)
   double * image;
   double * out;
   int x,y,i,j,n;
-  int X = 128;  /* x image size */
-  int Y = 128;  /* y image size */
+  int X = 240;  /* x image size */
+  int Y = 240;  /* y image size */
 
   /* create a simple image: left half black, right half gray */
   image = (double *) malloc( X * Y * sizeof(double) );
